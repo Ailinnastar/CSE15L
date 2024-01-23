@@ -51,6 +51,7 @@ bash: cd: Hello.java: Not a directory
 - **Output**: `bash: cd: Hello.java: Not a directory`, no chage in working directory
 - **Explanation**: The error message indicates that `Hello.java` is not a directory. As `cd` command can only navigate and change directories, not to files, but will not affect the working directory.
 
+![4701706043183_ pic](https://github.com/Ailinnastar/CSE15L/assets/156360722/834753ba-bf34-40f4-8948-96a905cb1d18)
 
 
 
@@ -91,6 +92,7 @@ lec2.java
 [user@sahara ~]$ ls lec3.java 
 ls: cannot access 'lec3.java': No such file or directory
 ```
+![4711706044151_ pic](https://github.com/Ailinnastar/CSE15L/assets/156360722/c036be00-0f26-45aa-a4c9-1f97879e2082)
 
 
 ## Command: `cat` 
@@ -154,4 +156,5 @@ cat: lecture1: Is a directory
 - **Explanation**: The `cat` command displays contents for files therefore for will not work for directory and shows error message.
 
 
+![4691706041597_ pic](https://github.com/Ailinnastar/CSE15L/assets/156360722/dc6c49ad-fce0-4862-bbe3-6fb9a7de2b91)
 
