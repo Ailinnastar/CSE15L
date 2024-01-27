@@ -1,3 +1,4 @@
+# Part 1!
 # Code
 ```bash
 import java.net.URI;
@@ -63,6 +64,14 @@ the argument `URI url` was passes in, which relate to the following coding block
 ## How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 the `String x` value changed from `jpolitz: Hello\n` to `jpolitz: Hello\nyash: How are you` 
 
+
+# Part 2!!
+
+# Part 3!!!
+
+From lab 2 and 3 i have learnt that to access the remote computer, we can use `SSH` key to accesses it. It was very cool for me as it gave me an insight in the algorism or process of how to use other computer from differnt locations. 
+
+Moreover, I have also learnt to modify the file in the remote computer, there are many options, while it is  convinient to use `vim` when there is a small part of changes or updates. While also notice to control or in the `vim` it is very hard to get to the place and use the functions we often use, which required me to look in to those shortcuts to modofy the file or codes in the remote computer from my postion.
 
 
 
