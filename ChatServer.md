@@ -1,3 +1,4 @@
+# Code
 ```bash
 import java.net.URI;
 import java.io.IOException;
@@ -35,3 +36,6 @@ class ChatServer {
     }
 }
 ```
+# Screenshot of using `/add-message`
+![WeChat0a9e20072bb5d6beec2a8a1273c85cac](https://github.com/Ailinnastar/CSE15L/assets/156360722/82c23049-8d92-4ea7-9675-d939364be63b)
+![WeChat6d5f6fcde99351fb3795946178dec49a](https://github.com/Ailinnastar/CSE15L/assets/156360722/5228682a-51d8-4490-852c-c83bd91cb14e)
