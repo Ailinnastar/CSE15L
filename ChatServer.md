@@ -71,9 +71,9 @@ the `String x` value changed from `jpolitz: Hello\n` to `jpolitz: Hello\nyash: H
 
 <img width="486" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/b445f8bb-d6ee-4d36-907d-77dd05dc3045">
 
-- ## Absolute path to the public key for your SSH key for logging into ieng6
-/Users/ailinna/.ssh/id_rsa.pub
 <img width="894" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/4ffbb70d-c708-4072-8fb1-89af5275c0cd">
+- ## Absolute path to the public key for your SSH key for logging into ieng6
+
 /home/linux/ieng6/oce/12/512/aiz007/.ssh/authorized_keys
 <img width="909" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/23008334-6d78-401a-8858-5c9588a8cf34">
 
