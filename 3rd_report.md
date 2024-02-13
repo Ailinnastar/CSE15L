@@ -72,6 +72,7 @@ grep -i "KNOW" 911report/chapter-10.txt
 <img width="668" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/9f067485-d524-4406-9608-c19bb8d0c41e">
 
 It will be usful when we want to figure out how many times the string apeared in the file without caring it is in the upper or lower letter cases.
+
 (Source: ‘How to use the Linux grep command’ https://www.ionos.com/digitalguide/server/configuration/linux-grep-command/#:~:text=The%20grep%20command%20“grep%20%2Dl,%2Di%20“test”%20example.）
 
 
@@ -104,6 +105,7 @@ Searches for the string "crushing" deeply from the sprcified working directory `
 
 
 It will be useful when have to find for a string that is unique, we can search for that line by searching for all of the files under the current working directroy.
+
 (Source: ‘grep(1) - Linux man page’ https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
@@ -131,6 +133,7 @@ This returns the .txt that do not contains the `#` under the directory `technica
 
 
 It is useful for filtering out lines that contains the string specified, to focus on lines that expected to have the string but do not in current stage.
+
 (Source: ‘grep(1) - Linux man page’ https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
@@ -154,6 +157,7 @@ This rturn how many lines in each directory if contains the string `here` under 
 <img width="673" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/bf64904f-0be4-4fb7-b8fc-fab1e9267717">
 
 This is useful when the interest is in how many lines have the term in the file, not actually know which line specifically cotains the string.
+
 (Source: ‘How to use the Linux grep command’ https://www.ionos.com/digitalguide/server/configuration/linux-grep-command/#:~:text=The%20grep%20command%20“grep%20%2Dl,%2Di%20“test”%20example.）
 
 
