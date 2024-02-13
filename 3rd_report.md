@@ -127,7 +127,6 @@ grep -v "i" technical/911report/chapter-1.txt
 ```
 
 <img width="204" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/8c8106c1-07dd-4580-8a44-11eccdb63fe4">
-<img width="175" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/6abde734-2eff-461d-8c15-0a1a7be2a83a">
 
 
 It is useful for filtering out lines that contains the string specified, to focus on lines that expected to have the string but do not in current stage.
