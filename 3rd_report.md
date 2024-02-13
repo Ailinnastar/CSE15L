@@ -52,7 +52,7 @@ Through observing the buggy code, what we can find that the returned array `arr`
 
 
 ## Part 2!! `grep` command 
-## Working directory: `docsearch/technical`
+### Working directory: `docsearch/technical`
 
 - **Option: -i**
 The -i makes `grep` case-insensitive search string in the given file.
