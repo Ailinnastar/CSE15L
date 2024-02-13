@@ -54,7 +54,7 @@ Through observing the buggy code, what we can find that the returned array `arr`
 ## Part 2!! `grep` command 
 ## Working directory: `docsearch/technical`
 
-- **Option: -i**
+- ##**Option: -i**##
 The -i makes `grep` case-insensitive search string in the given file.
 
 Example 1: Search for "struggle" in chapter-1.txt
@@ -76,7 +76,7 @@ It will be usful when we want to figure out how many times the string apeared in
 
 
 
-- **Option: -r**
+- ##**Option: -r**##
 The -r option allows `grep` to read and search all files recursively in a directory.
 
 Example 1: Searching for "user" recursively in all files within the curretn working directory `technical`
@@ -109,7 +109,7 @@ Searches for the string "crushing" deeply from the sprcified working directory `
 
 
 
-- **Option: -v**
+- ##**Option: -v**##
 The -v option inverts the match, return lines that do not contains the string.
 
 Example 1: Showing all lines that do not contain "success" in a file
@@ -127,7 +127,7 @@ This command filters out comment lines (lines starting with #) in server.conf, w
 
 
 
-- **Option: -l (files with matches)**
+- ##**Option: -l (files with matches)**##
 The -l option makes grep return all the files that contains the string.
 
 Example 1: Finding files that contain the keyword "database"
