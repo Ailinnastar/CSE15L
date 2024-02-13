@@ -25,7 +25,7 @@
 
 <img width="867" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/42110d9b-87d8-4992-9297-9b2dce334095">
 
-**before-and-after code change required to fix it**
+### **before-and-after code change required to fix it**
 
 - **Before fixed**
 ```bash
@@ -51,23 +51,27 @@ static int[] reversed(int[] arr) {
 Through observing the buggy code, what we can find that the returned array `arr` is filled by 0's by the new array created `newArray` with 0 with the size of `arr`. Therefore by swapping the assign and to be assigned, we can achive to assigned reversly from the orginal order array `arr` to new array `newArray` filled with 0 originaly to reversed array.
 
 
-## Part 2!! `grep` command
+## Part 2!! `grep` command 
+## Working directory: `docsearch/technical`
 
 - **Option: -i**
 The -i makes `grep` case-insensitive search string in the given file.
 
-Example 1: Search word "network" in files
+Example 1: Search for "struggle" in chapter-1.txt
+Search through chapter-1.txt of the string `'struggle'` without case sensitively.
 ```bash
-grep -i "network" ./technical/config.txt
+grep -i "struggle" 911report/chapter-1.txt
 ```
-This command will search for the term "network" in config.txt, without considering case sensitivity, which is useful when the case of the search term is unknown.
+<img width="678" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/84340ddf-0677-41f3-ae6b-ebc57fa0c772">
 
-Example 2: Searching for "Error" in log files
+Example 2: Searching for "know" in chapter-10.txt
+Even this the String inputed is upper case `'KNOW'` it will search for all the string in any cases in the `chapter-10.txt` and return the lines containng it.
 ```bash
-grep -i "error" ./technical/logs/application.log
+grep -i "KNOW" 911report/chapter-10.txt
 ```
-This command looks for the term "error" in application.log, which is useful in finding all instances of errors, whether they are logged as "Error", "ERROR", or "error".
+<img width="668" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/9f067485-d524-4406-9608-c19bb8d0c41e">
 
+It will be usful when we want to figure out how many times the string apeared in the file without caring it is in the upper or lower letter cases.
 
 
 
@@ -75,24 +79,37 @@ This command looks for the term "error" in application.log, which is useful in f
 - **Option: -r**
 The -r option allows `grep` to read and search all files recursively in a directory.
 
-Example 1: Searching for "user" recursively in all files within the ./technical directory
+Example 1: Searching for "user" recursively in all files within the curretn working directory `technical`
+Searches for the string "lover" deeply from the current working directory `technical` to the directories, i.e. `biomed`, `plos`, `government`, in the cureent working directory.
+
 ```bash
-grep -r "user" ./technical/
+grep -r "lover" 
 ```
-This command searches for the string "user" in all files under the ./technical directory
+<img width="705" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/ba4cdba4-353e-43b5-87c9-eb3ce40ec2d6">
+
 
 Example 2: Recursively searching for "timeout" in all .conf files
+Current working directory:
 ```bash
-grep -r "timeout" ./technical/*.conf
+pwd               
+/Users/ailinna/Desktop/docsearch
 ```
-This command recursively searches for the string "timeout" in files with a .conf extension within the ./technical directory.
+Implmentation:
+```bash
+grep -r "crushing" technical 
+```
+Searches for the string "crushing" deeply from the sprcified working directory `technical` to the directories, i.e. `biomed`, `plos`, `government`, in the specified working directory.
+
+<img width="613" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/52e73f1b-7082-42bb-a3e1-b9ac0128c9b3">
 
 
 
 
 
 
-- **Option: -v (invert match)**
+
+
+- **Option: -v**
 The -v option inverts the match, return lines that do not contains the string.
 
 Example 1: Showing all lines that do not contain "success" in a file
