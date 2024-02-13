@@ -109,25 +109,32 @@ Searches for the string "crushing" deeply from the sprcified working directory `
 
 
 
-- ##**Option: -v**##
+- **Option: -v**
 The -v option inverts the match, return lines that do not contains the string.
 
-Example 1: Showing all lines that do not contain "success" in a file
+Example 1: Showing all lines that do not contain "a" in chapter-10.txt
 ```bash
-grep -v "success" ./technical/operation.log
+grep -v "a" technical/911report/chapter-10.txt
 ```
-This command is useful for filtering out lines that contain the word "success", possibly to focus on lines with errors or warnings.
 
-Example 2: Inverting the match to exclude comments from a configuration file
+
+<img width="430" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/17471ccf-21ce-42eb-8d63-0fe16cb8a761">
+
+
+Example 2: Showing all lines that do not contain in chapter-1.txt
 ```bash
-grep -v "^#" ./technical/server.conf
+grep -v "i" technical/911report/chapter-1.txt
 ```
-This command filters out comment lines (lines starting with #) in server.conf, which can be helpful when you want to view only the active configuration lines.
+
+<img width="204" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/8c8106c1-07dd-4580-8a44-11eccdb63fe4">
+<img width="175" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/6abde734-2eff-461d-8c15-0a1a7be2a83a">
+
+
+It is useful for filtering out lines that contains the string specified, to focus on lines that expected to have the string but do not in current stage.
 
 
 
-
-- ##**Option: -l (files with matches)**##
+- **Option: -l (files with matches)**
 The -l option makes grep return all the files that contains the string.
 
 Example 1: Finding files that contain the keyword "database"
