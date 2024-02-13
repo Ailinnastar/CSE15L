@@ -110,23 +110,24 @@ It will be useful when have to find for a string that is unique, we can search f
 
 
 - **Option: -v**
-The -v option inverts the match, return lines that do not contains the string.
+The -v option inverts the match, return lines/ file that do not contains the string.
 
 Example 1: Showing all lines that do not contain "a" in chapter-10.txt
 ```bash
 grep -v "a" technical/911report/chapter-10.txt
 ```
-
+This returns all those lines that do not contains `a` in the chapter-10.txt.
 
 <img width="430" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/17471ccf-21ce-42eb-8d63-0fe16cb8a761">
 
 
-Example 2: Showing all lines that do not contain in chapter-1.txt
+Example 2: Showing all files
 ```bash
-grep -v "i" technical/911report/chapter-1.txt
+grep -l "#" technical/government/Alcohol_Problems/*.txt
 ```
+This returns the .txt that do not contains the `#` under the directory `technical/government/Alcohol_Problems`
+<img width="664" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/e08c6627-0523-44e0-a4b0-fbe72680678f">
 
-<img width="204" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/8c8106c1-07dd-4580-8a44-11eccdb63fe4">
 
 
 It is useful for filtering out lines that contains the string specified, to focus on lines that expected to have the string but do not in current stage.
@@ -134,20 +135,25 @@ It is useful for filtering out lines that contains the string specified, to focu
 
 
 - **Option: -c**
-The -c option makes grep return all the files that contains the string.
+The -c option makes grep return counts of all the lines that contains the string.
 
-Example 1: Finding files that contain the keyword "database"
+Example 1: Count how many lines in the file Session4-PDF.txt that contain the keyword "here"
 ```bash
-grep -l "database" ./technical/*
+grep -c "here" technical/government/Alcohol_Problems/Session4-PDF.txt
 ```
-This command lists filenames in the ./technical directory that contain the term "database", which is useful when the interest is in which files contain the term, not the actual matching lines.
+This return how many lines in the specific file `Session4-PDF.txt` have the string `here`.
+<img width="657" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/5b978eb5-2c7a-4ea7-b3e3-4700512f5e8e">
 
-Example 2: Finding configuration files that mention "port"
+
+Example 2: Counts lines all files if contains "here" in each file under the directory `Alcohol_Problem`
 ```bash
-grep -l "port" ./technical/*.cfg
+ grep -c "here" technical/government/Alcohol_Problems/*.txt
 ```
-This command will list all .cfg files in the ./technical directory that mention "port". This is useful for quickly identifying relevant configuration files.
+This rturn how many lines in each directory if contains the string `here` under the directory `technical/government/Alcohol_Problems`.
 
+<img width="673" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/bf64904f-0be4-4fb7-b8fc-fab1e9267717">
+
+This is useful when the interest is in how many lines have the term in the file, not actually know which line specifically cotains the string.
 
 
 (Source: grep(1) - Linux man page)
