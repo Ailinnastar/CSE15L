@@ -54,7 +54,7 @@ Through observing the buggy code, what we can find that the returned array `arr`
 ## Part 2!! `grep` command 
 ## Working directory: `docsearch/technical`
 
-- ##**Option: -i**##
+- **Option: -i**
 The -i makes `grep` case-insensitive search string in the given file.
 
 Example 1: Search for "struggle" in chapter-1.txt
@@ -76,7 +76,7 @@ It will be usful when we want to figure out how many times the string apeared in
 
 
 
-- ##**Option: -r**##
+- **Option: -r**
 The -r option allows `grep` to read and search all files recursively in a directory.
 
 Example 1: Searching for "user" recursively in all files within the curretn working directory `technical`
@@ -103,7 +103,7 @@ Searches for the string "crushing" deeply from the sprcified working directory `
 <img width="613" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/52e73f1b-7082-42bb-a3e1-b9ac0128c9b3">
 
 
-
+It will be useful when have to find for a string that is unique, we can search for that line by searching for all of the files under the current working directroy.
 
 
 
@@ -133,8 +133,8 @@ It is useful for filtering out lines that contains the string specified, to focu
 
 
 
-- **Option: -l (files with matches)**
-The -l option makes grep return all the files that contains the string.
+- **Option: -c**
+The -c option makes grep return all the files that contains the string.
 
 Example 1: Finding files that contain the keyword "database"
 ```bash
@@ -147,7 +147,6 @@ Example 2: Finding configuration files that mention "port"
 grep -l "port" ./technical/*.cfg
 ```
 This command will list all .cfg files in the ./technical directory that mention "port". This is useful for quickly identifying relevant configuration files.
-
 
 
 
