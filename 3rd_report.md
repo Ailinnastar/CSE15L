@@ -123,12 +123,16 @@ This returns all those lines that do not contains `a` in the chapter-10.txt.
 <img width="430" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/17471ccf-21ce-42eb-8d63-0fe16cb8a761">
 
 
-Example 2: Showing all files
+Example 2: Showing all lines and txt files that do not contains "#"
 ```bash
-grep -l "#" technical/government/Alcohol_Problems/*.txt
+grep -v "#" technical/government/Alcohol_Problems/*.txt
 ```
-This returns the .txt that do not contains the `#` under the directory `technical/government/Alcohol_Problems`
-<img width="664" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/e08c6627-0523-44e0-a4b0-fbe72680678f">
+This returns the lines that .txt do not contains the `#` under the directory `technical/government/Alcohol_Problems`
+Too much resulted lines therefore used `less` command to be neat in the terminal.
+<img width="463" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/6fcb410c-4e40-4e58-81e2-3f61d8a3de9b">
+
+<img width="605" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/3bf2596e-93d2-4741-9952-6ebd11411c40">
+
 
 
 
