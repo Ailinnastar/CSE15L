@@ -11,7 +11,11 @@
       assertArrayEquals(new int[] { 1, 2, 3 }, input1);
     }
 ```
+- **Symptom**
+<img width="870" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/3b32f0f2-300d-40d6-9c55-dfba44f28515">
+
 - **Does not indeuce faliure**
+  
 ```bash
   @Test
   public void testReversed() {
@@ -21,9 +25,8 @@
 ```
 
 - **Symptom**
-<img width="870" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/3b32f0f2-300d-40d6-9c55-dfba44f28515">
+<img width="1112" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/36616d6d-e765-460f-8bc3-9e6c052e2e31">
 
-<img width="867" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/42110d9b-87d8-4992-9297-9b2dce334095">
 
 ### **before-and-after code change required to fix it**
 
