@@ -129,7 +129,8 @@ grep -v "#" technical/government/Alcohol_Problems/*.txt
 ```
 This returns the lines that .txt do not contains the `#` under the directory `technical/government/Alcohol_Problems`
 Too much resulted lines therefore used `less` command to be neat in the terminal.
-<img width="463" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/6fcb410c-4e40-4e58-81e2-3f61d8a3de9b">
+
+<img width="600" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/6fcb410c-4e40-4e58-81e2-3f61d8a3de9b">
 
 <img width="605" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/3bf2596e-93d2-4741-9952-6ebd11411c40">
 
