@@ -12,6 +12,7 @@
     }
 ```
 - **Symptom**
+  
 <img width="870" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/3b32f0f2-300d-40d6-9c55-dfba44f28515">
 
 - **Does not indeuce faliure**
