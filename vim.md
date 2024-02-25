@@ -16,6 +16,7 @@ Run the tests, demonstrating that they fail
 <img width="560" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/cea5011d-1d26-42a4-b99d-38842e9e0f21">
 
 Edit the code file to fix the failing test
+Keys pressed:`jjjjj
 
 <img width="329" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/c3bdecdd-78b2-40ac-8c61-142267d38f7d">
 
