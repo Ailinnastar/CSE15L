@@ -24,6 +24,7 @@ Keys Typed: `cd <space> lab7 <enter>` move in to the rigt working repository. `b
 ## Edit the code file to fix the failing test ## 
 
 Keys pressed:`vim <space> listExamples.java <enter>` to enter vim mode, `j j j j j j j j... l l l l...` to move to the issue place, `x` to delete the 1 `i` to insert 2 in that position.
+
 <img width="400" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/bdc8031f-e8fe-47bb-870b-b9217d9a59a8">
 
 <img width="329" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/c3bdecdd-78b2-40ac-8c61-142267d38f7d">
