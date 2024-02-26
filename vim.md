@@ -31,10 +31,12 @@ Keys pressed:`vim <space> listExamples.java <enter>` to enter vim mode, `j j j j
 
 ## Run the tests, demonstrating that they now succeed ## 
 Keys Typed: `bash test.sh  <enter>` to run the bash script again.
+
 <img width="349" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/8b4a566c-5371-49c7-a848-5d73d555c727">
 
 
 ## Commit and push the resulting change to your Github account ## 
 
 Keys Typed: `git <space> add <space> ListExamples.java <enter>` select the changes that will be staged for the next commit, `git <space> commit <space> -m <space> 'messages' <enter>`, to create a snapshot of the staged changes along a timeline of a Git projects history with messages, `git <space> push <enter>` to share the changes in my remote repository.
+
 <img width="644" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/dfe38bdf-1ba9-4e89-a4ae-dc9de913ebc5">
