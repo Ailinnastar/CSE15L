@@ -9,7 +9,7 @@ Keys Typed: `ssh <space> aiz007@ieng6.ucsd.edu <enter>` to login and without pas
 
 ## Clone your fork of the repository from your Github account (using the SSH URL) ## 
 
-Keys Typed: `git <space> clone <sapce> <SSH URL> <enter>` to clone the repository from github.
+Keys Typed: `git <space> clone <space> <command> v <enter>` to clone the repository from github. I have clone the forked repository from my Github thourgh copying my SSH URL `git@github.com:Ailinnastar/lab7.git`
 
 <img width="511" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/8c17a8cc-b15f-4478-84d8-da4f165b3189">
 
