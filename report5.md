@@ -160,5 +160,7 @@ public class ReadLine {
 
 ## Part 2 – Reflection ##
 
+One intriguing concept I learned during the second half of this quarter was the power and versatility of the Java Debugger (jdb). Before, debugging for me primarily consisted of inserting print statements throughout my code, which was fine but wasn't always effective for tracking down where is causing the bug. Through jdb, I discovered a more refined approach to debugging that allowed me to pause execution, inspect variable states, step through code one line at a time, and evaluate expressions on the fly. This not only made the debugging process more efficient but also have  the ability to use debugging mode without depending on the java debugger from editor extension. 
 
+Furthermore, vim was also a highlight form the second half of this quater, where I a able to edit and inspect files form the terminal witout actully opening the file or `echo`  `cat` the content, which expand my knolegdes and aquire a new skill in editing files in any condition if and only if I can access the file from my end, which made things easy if I want to accesss the other computer through ssh and edit and fix things. 
 
