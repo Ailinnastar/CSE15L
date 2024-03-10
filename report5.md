@@ -6,6 +6,7 @@
 
 ### Student Post:
 **Name**: John 
+
 **Issue with reading logic in Java Program**
 
 Hi,
