@@ -10,7 +10,8 @@
 
 Hi,
 
-I made a bash script that compiles and executes a Java program, but I'm getting unexpected output. My Java program is supposed to read a text file and print out each line with line numbers and stopp when it is null. However, in my output it only shows the second line and a null with line number 1 before each string printed out from the selected text file `read.txt`. I guess the issue might be with my file reading logic in Java, but I double-checked and it looks fine for me. Here's a screenshot of the output (symptom) when I run my bash script :
+I made a bash script that compiles and executes a Java program, but I'm getting unexpected output. My Java program is supposed to read a text file and print out each line with line numbers, but it only shows the second line and a null with line number 1 before each string printed from the text file `read.txt`. I think the issue might be with my file reading logic in Java, but I double-checked, and it looks fine to me. Here's a screenshot of the output (symptom) when I run my bash script:
+
 
 <img width="300" alt="image" src="https://github.com/Ailinnastar/CSE15L/assets/156360722/39bf20a6-6933-4c60-ba0e-8d5a27481f4a">
  
@@ -23,9 +24,9 @@ What should I do? Thanks for the help!
 
 Hi John!
 
-I undestood that your Java program isn't reading the lines correctly. What I can suggest is look in t the pattern how the lines are skipped and not printed out. If it is consistant skipping inteval, maybe look in to the documentation of the command used to read the whole text or reading lines in each iteration. 
+It seems your Java program isn't reading the lines correctly. Look into the pattern of how the lines are skipped and not printed. If there's a consistent skipping interval, maybe review the documentation of the command used to read the text or how you're reading lines in each iteration.
 
-Also for the line number, you may looking to to the number that is incrementing or not for each loop.
+Also, for the line number, ensure it increments correctly for each loop iteration.
 
 Hope this helps!
 
@@ -33,10 +34,10 @@ Hope this helps!
 
 ### Follow-up Student Post:
 
-Thanks for the quick response! 
-And yes! it was the `.readLine()` and incorrect increments causing this issues.
-I found that the out put is printing out the even number lines in the text file, so I looked in to my code and documentation of `.readLine()` and found `.readLine()` will read next line when called, I called `.readLine()` twice in one interatiion, so that it caused skipping one line everytime and printing null although passing the non-null condition of the loop. 
-Also the line number incrementation was so outside te loop which did noy did the increment cirrectly as I wished.
+Thanks for the quick response!
+And yes! It was the `.readLine()` and incorrect increments causing these issues.
+I found that the output is printing out the even number lines in the text file, so I looked into my code and the documentation of `.readLine()` and realized calling `.readLine()` twice in one iteration caused it to skip one line every time and print null, although passing the non-null condition of the loop.
+Also, the line number incrementation was outside the loop, which did not do the increment correctly as I wished.
 
 **bug:**
 
@@ -109,16 +110,16 @@ pikabooooooo!
 bash bash.sh read.txt 
 ```
 
-### Description of What to Edit to Fix the Bug:
-
-Upon reviewing the `ReadLine.java` code, looking in to the `read.txt` and the output, I realised that I did not really understand how does `.readLine()` works when called everytime, which caused the skipping line and the null output in the outcome. I made a variable for the `.readline()` so that the line can be stored in to the variable without moving to the next one when i want the line. Furthermore, I found that the incrementation for the number was not accurate, it stays the same untill the program exit the loop. Meanwhile I moved the incrementation inside the loop instead of outside the loop.
+### Description of What to Edit to Fix the Bug: ###
+Upon reviewing the ReadLine.java, looking into the read.txt and the output, I realized that I did not understand how `.readLine()` works when called every time, which caused the line skipping and the null output in the outcome. I made a variable for the `.readLine()` so that the line can be stored into the variable without moving to the next one when I want the line. Furthermore, I found that the line number incrementation was not accurate, as it stayed the same until the program exited the loop. Meanwhile, I moved the incrementation inside the loop instead of outside.
 
 What did I do to fix the bug:
-- store the line in to a variable for future use
+
+- Store the line into a variable for future use
 ```
 line = reader.readLine()
 ```
-- put the incremetation inside the loop
+- Put the incrementation inside the loop
   
 
 **Fixed `ReadLile.java`:**
@@ -160,7 +161,7 @@ public class ReadLine {
 
 ## Part 2 – Reflection ##
 
-One intriguing concept I learned during the second half of this quarter was the power and versatility of the Java Debugger (jdb). Before, debugging for me primarily consisted of inserting print statements throughout my code, which was fine but wasn't always effective for tracking down where is causing the bug. Through jdb, I discovered a more refined approach to debugging that allowed me to pause execution, inspect variable states, step through code one line at a time, and evaluate expressions on the fly. This not only made the debugging process more efficient but also have  the ability to use debugging mode without depending on the java debugger from editor extension. 
+One intriguing concept I learned during the second half of this quarter was the power and versatility of the Java Debugger (jdb). Before, debugging for me primarily consisted of inserting print statements throughout my code. This approach was fine but not always effective for tracking down bugs. Through jdb, I discovered a more refined approach to debugging that allowed me to pause execution, inspect variable states, step through code one line at a time, and evaluate expressions on the fly. This not only made the debugging process more efficient but also gave me the ability to use the debugging mode without depending on the Java debugger from the editor extension.
 
-Furthermore, vim was also a highlight form the second half of this quater, where I a able to edit and inspect files form the terminal witout actully opening the file or `echo`  `cat` the content, which expand my knolegdes and aquire a new skill in editing files in any condition if and only if I can access the file from my end, which made things easy if I want to accesss the other computer through ssh and edit and fix things. 
 
+Furthermore, Vim was also a highlight from the second half of this quarter, where I was able to edit and inspect files from the terminal without actually opening the file or using `echo` or `cat` to display the content. This expanded my knowledge and acquired a new skill in editing files under any condition, as long as I can access the file from my end. This made things easier if I wanted to access another computer through ssh and edit and fix things.
